@@ -1,0 +1,25 @@
+.nav {
+  padding-top: .6rem;
+  padding-bottom: .6rem;
+  border-bottom: 1px solid $grey-400;
+
+  .container {
+    @include flex-between;
+  }
+
+  img {
+    height: 50px;
+    width: auto;
+    vertical-align: middle;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  a {
+    display: block;
+    font-weight: 700;
+    font-size: 1.3rem;
+  }
+}

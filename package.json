@@ -1,0 +1,27 @@
+{
+  "name": "reasonwptheme",
+  "version": "1.0.0",
+  "description": "Reason WP test theme",
+  "scripts": {
+    "build:css": "sass src/stylesheets/style.scss style.css",
+    "minify:css": "css-minify -f style.css -o ./",
+    "build:js": "rollup --config rollup.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jl-welch/reason-wp-test.git"
+  },
+  "author": "jl-welch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jl-welch/reason-wp-test/issues"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "rollup": "^2.50.6",
+    "sass": "^1.55.0"
+  }
+}

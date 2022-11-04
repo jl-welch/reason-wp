@@ -1,0 +1,85 @@
+.header__top {
+  border-bottom: 1px solid $grey-400;
+
+  .container { 
+    @include flex-between;
+  }
+}
+
+.header__search,
+.header__top-link {
+  padding: .8rem 1.2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.header__search {
+  height: 32px;
+  border-top: none;
+  border-right: 1px solid $grey-400;
+  border-bottom: none;
+  border-left: 1px solid $grey-400;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.header__top-link {
+  vertical-align: super;
+
+  &--learn {
+    @include hover-color-bg($white, $green);
+    border-bottom: 2px solid $green;
+  }
+
+  &--donate {
+    @include hover-color-bg($white, $black);
+    border-bottom: 2px solid $red;
+    color: $white;
+    background-color: $red;
+  }
+}
+
+.header__branding {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-image: url("https://picsum.photos/1920/600");
+  background-size: cover;
+
+  .container {
+    display: flex;
+    min-height: 400px;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.header__title,
+.header__introduction {
+  margin-bottom: 1.4rem;
+  border-radius: 2px;
+}
+
+.header__title {
+  max-width: 708px;
+  padding: 1.6rem;
+  font-size: 4rem;
+  color: $white;
+  background-color: $blue;
+}
+
+.header__introduction {
+  max-width: 460px;
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  color: $blue;
+  background-color: $white;
+}
+
+.header__cta {
+  @include hover-color-bg($white, $black);
+  align-self: flex-start;
+  color: $red;
+  background-color: $white;
+  transition: color .2s, background-color .2s;
+}

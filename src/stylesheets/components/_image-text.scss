@@ -1,0 +1,41 @@
+.image-text {
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.image-text__image {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    max-width: 50%;
+  }
+}
+
+.image-text__details {
+  display: flex;
+  margin-left: -1px;
+  padding: 2.4rem;
+  flex-direction: column;
+  justify-content: center;
+  color: $white;
+  background-color: $green;
+}
+
+.image-text__title {
+  margin-bottom: 1.6rem;
+  font-size: 2.6rem;
+}
+
+.image-text__text {
+  margin-bottom: 1.4rem;
+  font-size: 1.6rem;
+}
+
+.image-text__cta {
+  @include hover-color-bg($red, $white);
+  border: 1px solid $white;
+  align-self: flex-start;
+  color: inherit;
+}

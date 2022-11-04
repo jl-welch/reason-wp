@@ -1,0 +1,67 @@
+.what {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  text-align: center;
+  color: $white;
+  background-color: $blue;
+}
+
+.what__title,
+.what__subtitle,
+.what__text {
+  margin-bottom: 1.2rem;
+}
+
+.what__title,
+.what__introduction {
+  text-align: left;
+}
+
+.what__title {
+  font-size: 2.4rem;
+}
+
+.what__introduction {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+.what__grid {
+  display: grid;
+  margin-bottom: 4rem;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.6rem;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.what__item {
+  padding: 2rem 2.6rem;
+  border-radius: 2px;
+  text-align: center;
+  color: $black;
+  background-color: $white;
+
+  .what__link {
+    @include hover-color-bg($white, $black);
+    border: 1px solid $black;
+    color: $red;
+  }
+}
+
+.what__subtitle {
+  font-size: 1.8rem;
+}
+
+.what__text {
+  font-size: 1.2rem;
+}
+
+.what__link {
+  @include hover-color-bg($white, $black);
+  color: $red;
+  background-color: $white;
+}
+
